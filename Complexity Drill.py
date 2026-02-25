@@ -1,13 +1,13 @@
 n = int(input("Enter n: "))
 
-# 1️⃣ Single Loop → O(n)
+# Single Loop
 count = 0
 for i in range(n):
     count += 1
 print("\nSingle Loop Operations:", count, "→ Complexity: O(n)")
 
 
-# 2️⃣ Nested Loop → O(n²)
+# Nested Loop
 count = 0
 for i in range(n):
     for j in range(n):
@@ -15,7 +15,7 @@ for i in range(n):
 print("Nested Loop Operations:", count, "→ Complexity: O(n^2)")
 
 
-# 3️⃣ Triangular Loop → O(n²/2 ≈ O(n²))
+#  Triangular Loop
 count = 0
 for i in range(n):
     for j in range(i + 1):
@@ -23,7 +23,7 @@ for i in range(n):
 print("Triangular Loop Operations:", count, "→ Complexity: O(n^2)")
 
 
-# 4️⃣ Halving Loop → O(log n)
+# Halving Loop
 count = 0
 i = n
 while i > 0:
@@ -32,7 +32,7 @@ while i > 0:
 print("Halving Loop Operations:", count, "→ Complexity: O(log n)")
 
 
-# 5️⃣ Linear Search → Best / Avg / Worst
+# Linear Search
 arr = list(range(1, n + 1))
 key = int(input("\nEnter element to search (linear): "))
 
@@ -48,7 +48,7 @@ print("Linear Search Operations:", count)
 print("Best: O(1), Avg: O(n), Worst: O(n)")
 
 
-# 6️⃣ Binary Search → O(log n)
+# Binary Search
 key = int(input("\nEnter element to search (binary): "))
 
 low, high = 0, n - 1
